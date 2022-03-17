@@ -138,3 +138,7 @@ a:hover {
   background-position: center;
   background-size: cover;
 }
+
+.cart-table1 {
+  height: 50vh;
+}
