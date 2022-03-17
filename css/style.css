@@ -44,6 +44,10 @@ a:hover {
   cursor: pointer;
 }
 
+.fa:hover {
+  color: white !important;
+}
+
 /* Hero section */
 
 .hero {
@@ -73,6 +77,7 @@ a:hover {
   color: var(--primary);
 }
 
+
 /*Why us Section*/
 
 .iconUs {
@@ -81,6 +86,26 @@ a:hover {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
+}
+
+/* Our Menu */
+.single-product-item {
+  box-shadow: 0 0 20px #e4e4e4;
+  border-radius: 8px;
+  padding: 3.5rem 0;
+}
+
+.cart-btn {
+  background-color: var(--primary);
+  padding: 1rem 1rem;
+  border-radius: .9rem;
+}
+
+.cart-btn:hover {
+  background-color: #161c2d;
+  border: 2px solid var(--primary);
+  font-weight: bold;
+  color: var(--primary);
 }
 
 /* Our Chefs section*/
