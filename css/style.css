@@ -64,3 +64,11 @@ nav .navbar-nav li a:hover {
   color: var(--primary);
 }
 
+.iconUs {
+  border: 2px dotted var(--primary);
+  padding: .5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
