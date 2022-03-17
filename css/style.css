@@ -12,17 +12,26 @@
 body {
   margin-top: 5rem;
   font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
 }
 
 /* Navigation section */
 .logo-text {
   text-decoration: underline;
 }
+
+a,
 nav .navbar-nav li a {
   color: rgba(255, 255, 255, .6) !important;
+  text-decoration: none;
 }
 
+
 nav .navbar-nav li a:hover {
+  color: var(--primary) !important;
+}
+
+a:hover {
   color: var(--primary) !important;
 }
 
@@ -64,6 +73,8 @@ nav .navbar-nav li a:hover {
   color: var(--primary);
 }
 
+/*Why us Section*/
+
 .iconUs {
   border: 2px dotted var(--primary);
   padding: .5rem;
@@ -72,3 +83,20 @@ nav .navbar-nav li a:hover {
   border-radius: 50%;
 }
 
+/* Our Chefs section*/
+.our {
+  color: var(--primary);
+}
+
+/* Contact Section */
+.title {
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+  text-decoration-style: solid;
+}
+
+/* Footer Section*/
+
+.footer {
+  border-top: 1px solid white;
+}
