@@ -31,10 +31,9 @@ $(document).ready(function () {
     }, 0);
 
 
-    var res = pizzaSize + pizzaCrust + pizzaToppings + deliveryFee;
-    console.log(res);
-    console.log(deliveryLocation);
-
+    //var res = pizzaSize + pizzaCrust + pizzaToppings + deliveryFee;
+    //console.log(res);
+    //console.log(deliveryLocation);
   });
 
 
