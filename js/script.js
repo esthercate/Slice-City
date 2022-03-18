@@ -11,22 +11,29 @@ OrderPizza.prototype.getTotal = function () {
 };
 
 
+
 // User Interface Logic or Front-end
 
 $(document).ready(function () {
   $("form#myForm1").submit(function (event) {
     event.preventDefault();
-    var pizzaSize = $("input[name=size]:checked").val();
-    var pizzaCrust = $("input[name='crust']:checked").val();
+    var pizzaSize = parseInt($("input[name=size]:checked").val());
+    var pizzaCrust = parseInt($("input[name='crust']:checked").val());
+    var deliveryFee = parseInt($("input[name=delivery]:checked").val());
+    var deliveryLocation = $("#deliveryLoc").val()
 
-    var pizzaToppings = $('input:checkbox:checked').map(function () {
-      return this.value;
+    var arr = $('input:checkbox:checked').map(function () { // getting all checked inputs 
+      return parseInt(this.value); // converting the input to numbers 
     }).get();
 
-    var deliveryLocation = $("#deliveryLoc").val();
+    var pizzaToppings = arr.reduce(function (a, b) { //summing all checked input
+      return a + b;
+    }, 0);
 
-    var res = pizzaSize + pizzaCrust + pizzaToppings + deliveryLocation;
+
+    var res = pizzaSize + pizzaCrust + pizzaToppings + deliveryFee;
     console.log(res);
+    console.log(deliveryLocation);
 
   });
 
