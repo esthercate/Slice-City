@@ -97,12 +97,12 @@ a:hover {
 
 .cart-btn {
   background-color: var(--primary);
-  padding: 1rem 1rem;
+  padding: 1rem 1.5rem;
   border-radius: .9rem;
 }
 
 .cart-btn:hover {
-  background-color: #161c2d;
+  background-color: white;
   border: 2px solid var(--primary);
   font-weight: bold;
   color: var(--primary);
