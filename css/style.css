@@ -142,3 +142,8 @@ a:hover {
 .cart-table1 {
   height: 50vh;
 }
+
+/* Modal Styles*/
+.modal-header {
+  background-color: var(--primary);
+}
