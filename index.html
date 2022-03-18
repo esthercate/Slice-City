@@ -163,30 +163,31 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body" style="text-align: left;">
-                    <form action="" class="form1" id="myForm1">
+
+                    <form class="form1" id="myForm1">
 
                       <div class="size mb-3">
                         <div class="body-title">
                           <h6 class="fw-bold">Choose size: </h6>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                            value="option1">
+                          <input class="form-check-input" type="radio" name="size" id="inlineRadio1" value="small"
+                            required>
                           <label class="form-check-label" for="inlineRadio1">Small</label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option2">
+                          <input class="form-check-input" type="radio" name="size" id="inlineRadio2" value="medium"
+                            required>
                           <label class="form-check-label" for="inlineRadio2">Medium</label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                            value="option3">
+                          <input class="form-check-input" type="radio" name="size" id="inlineRadio3" value="large"
+                            required>
                           <label class="form-check-label" for="inlineRadio3">Large</label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                            value="option3">
+                          <input class="form-check-input" type="radio" name="size" id="inlineRadio3"
+                            value="extra-large">
                           <label class="form-check-label" for="inlineRadio3">Extra Large</label>
                         </div>
                       </div>
@@ -196,23 +197,23 @@
                           <h6 class="fw-bold">Choose Crust:</h6>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                            value="option1">
-                          <label class="form-check-label" for="inlineRadio1">Cripsy</label>
+                          <input class="form-check-input" type="radio" name="crust" id="inlineRadio1" value="crispy"
+                            required>
+                          <label class="form-check-label" for="inlineRadio1">Crispy</label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                            value="option2">
+                          <input class="form-check-input" type="radio" name="crust" id="inlineRadio2" value="stuffed"
+                            required>
                           <label class="form-check-label" for="inlineRadio2">Stuffed</label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                            value="option3">
+                          <input class="form-check-input" type="radio" name="crust" id="inlineRadio3"
+                            value="gluten-free" required>
                           <label class="form-check-label" for="inlineRadio3">Gluten-free</label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                            value="option3">
+                          <input class="form-check-input" type="radio" name="crust" id="inlineRadio3" value="flatbread"
+                            required>
                           <label class="form-check-label" for="inlineRadio3">Flatbread</label>
                         </div>
                       </div>
@@ -222,25 +223,28 @@
                           <h6 class="fw-bold">Select Toppings: </h6>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <input class="form-check-input" name="toppings" type="checkbox" value="Pepperoni"
+                            id="topping1">
                           <label class="form-check-label" for="flexCheckDefault">
                             Pepperoni
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                          <input class="form-check-input" name="toppings" type="checkbox" value="extra-cheese"
+                            id="topping2">
                           <label class="form-check-label" for="flexCheckChecked">
                             Extra Cheese
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <input class="form-check-input" name="toppings" type="checkbox" value="onions" id="topping3">
                           <label class="form-check-label" for="flexCheckDefault">
                             Onions
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                          <input class="form-check-input" name="toppings" type="checkbox" value="green-papers"
+                            id="topping4">
                           <label class="form-check-label" for="flexCheckChecked">
                             Green Peppers
                           </label>
@@ -254,37 +258,36 @@
                         <div class="prompt">
                           <p>Do you want your Pizza to be delivered to you?</p>
                           <div class="prompt-btn">
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1">
-                              <label class="form-check-label" for="inlineRadio1">Yes</label>
+                            <div class="deliv d-flex">
+                              <div class="option">
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="delivery" id="inlineRadio3"
+                                    value="gluten-free">
+                                  <label class="form-check-label" for="inlineRadio3">Yes</label>
+                                </div>
+                              </div>
+                              <div class="option2">
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="delivery" id="inlineRadio3"
+                                    value="gluten-free">
+                                  <label class="form-check-label" for="inlineRadio3">No</label>
+                                </div>
+                              </div>
                             </div>
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2">
-                              <label class="form-check-label" for="inlineRadio2">No</label>
-                            </div>
-
-                            <!--
                             <div class="location mt-2">
                               <div class="mb-3">
                                 <label for="formGroupExampleInput" class="form-label">Enter Delivery Location</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                <input type="text" class="form-control" id="deliveryLoc"
                                   placeholder="Eg. Fedha estate, HouseName, 4th Floor">
                               </div>
                             </div>
-                            -->
-
                           </div>
                         </div>
-
+                      </div>
+                      <div class="col-auto btnform mt-3">
+                        <button type="submit" class="btn btn-sbt mt-2">Add to Cart</button>
                       </div>
                     </form>
-
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Add to Cart</button>
                   </div>
                 </div>
               </div>

@@ -147,3 +147,23 @@ a:hover {
 .modal-header {
   background-color: var(--primary);
 }
+
+.location {
+  display: none;
+}
+
+.btnform {
+  border-top : 1px solid gray;
+}
+
+.btn-sbt {
+  background-color: var(--primary);
+  color: white;
+  padding: .5rem 1rem;
+}
+
+.btn-sbt:hover {
+  background-color: white;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
