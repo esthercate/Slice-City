@@ -149,22 +149,20 @@
             </div>
             <h4 class="fw-bold">Pepperoni</h4>
             <p class="product-price mt-4 mb fs-5">Regular<span class="d-block mt-3 mb-5 fw-bold">Ksh. 500</span></p>
-            <a href="" class="cart-btn text-light" data-bs-toggle="modal" data-bs-target="#modal1">Order
-              Now</a>
+            <a href="" class="cart-btn text-light" data-bs-toggle="modal" data-bs-target="#modal1">Order Now</a>
 
             <!-- Modal -->
             <div class="modal fade myModal" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title text-light" id="exampleModalLabel">Pepperoni Pizza</h5>
+                    <h5 class="modal-title text-light" id="pizzaName">Pepperoni Pizza</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body" style="text-align: left;">
 
                     <form class="form1" id="myForm1">
-
                       <div class="size mb-3">
                         <div class="body-title">
                           <h6 class="fw-bold">Choose size: </h6>
@@ -185,7 +183,8 @@
                           <label class="form-check-label" for="inlineRadio3">Large</label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="size" id="inlineRadio3" value="1200">
+                          <input class="form-check-input" type="radio" name="size" id="inlineRadio3" value="1200"
+                            required>
                           <label class="form-check-label" for="inlineRadio3">Extra Large</label>
                         </div>
                       </div>
@@ -251,7 +250,7 @@
                           <h6 class="fw-bold">Delivery Details</h6>
                         </div>
                         <div class="prompt">
-                          <p>Do you want your Pizza to be delivered to you?</p>
+                          <p>Would you like your Pizza to be delivered?</p>
                           <div class="prompt-btn">
                             <div class="deliv d-flex">
                               <div class="option">
@@ -282,12 +281,17 @@
                       <div class="col-auto btnform mt-3">
                         <button type="submit" class="btn btn-sbt mt-2">Add to Cart</button>
                       </div>
+
+                      <div class="demo">
+
+                      </div>
                     </form>
                   </div>
                 </div>
               </div>
             </div>
             <!-- End Modal-->
+
 
           </div>
         </div>
