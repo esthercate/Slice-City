@@ -155,9 +155,6 @@ a:hover {
   display: none;
 }
 
-.btnform {
-  border-top : 1px solid gray;
-}
 
 .btn-sbt {
   background-color: var(--primary);
@@ -169,4 +166,10 @@ a:hover {
   background-color: white;
   color: var(--primary);
   border: 2px solid var(--primary);
+}
+
+.right-col {
+  box-shadow: 0 0 20px #e4e4e4;
+  border-radius: 8px;
+  padding: 1rem 1rem;
 }
