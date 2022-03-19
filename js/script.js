@@ -33,14 +33,15 @@ $(document).ready(function () {
     var deliveryLocation = $("#deliveryLoc").val();
 
     var total = pizzaSize + pizzaCrust + pizzaToppings + deliveryFee;
-    var newPizza = new OrderPizza(pizzaSize, pizzaCrust, pizzaToppings, deliveryFee);
+    var newPizza = new OrderPizza(pizzaName, pizzaSize, pizzaCrust, pizzaToppings, deliveryFee);
     $("#summary tbody").append("<tr>" + "<td> Pizza Name </td>" + "<td>" + pizzaName + "</td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td> Size Price </td>" + "<td>" + pizzaSize + "</td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td> Crust Price </td>" + "<td>" + pizzaCrust + "</td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td> Toppings Price </td>" + "<td>" + pizzaToppings + "</td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td> Delivery Fee </td>" + "<td>" + deliveryFee + "</td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td> Delivery Location </td>" + "<td>" + deliveryLocation + "</td>" + "</tr>");
-    $("#summary tbody").append("<tr>" + "<td> TOTAL PRICE </td>" + "<td>" + "Ksh. " + total + "</td>" + "</tr>");
+    $("#summary tbody").append("<tr>" + "<td> TOTAL PRICE </td>" + "<td><span class='ttl'>" + "Ksh. " + total + "</span></td>" + "</tr>");
+    $("#summary tbody").append("<tr>" + "<td> ... </td>" + "<td>" + "..." + "</td>" + "</tr>");
 
     $("#myForm1").trigger("reset");
   });
