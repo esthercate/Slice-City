@@ -169,7 +169,7 @@
         <div class=" col-lg-4 col-md-6 text-center">
           <div class="single-product-item mt-3">
             <div class="product-image pt-2 mb-5">
-              <a href=""><img src="./images/pizza-menu4.png" width="50%" alt=""></a>
+              <a href=""><img src="./images/Pepperoni.png" width="50%" alt=""></a>
             </div>
             <h4 class="fw-bold">Hawaiian</h4>
             <p class="product-price mt-4 mb fs-5">Regular<span class="d-block mt-3 mb-5 fw-bold">Ksh. 500</span></p>
@@ -182,7 +182,7 @@
   </section>
 
   <!-- Chefs -->
-  <section class="our-chefs bg-dark text-light mt-5 pb-5" id="chefs">
+  <section class="our-chefs bg-dark d-flex text-light mt-5 pb-5" id="chefs">
     <div class="container">
       <div class="row">
         <div class="col col-lg-8 offset-lg-2 text-center">
@@ -194,7 +194,7 @@
       </div>
 
       <div class="row g-4">
-        <div class="col-lg-3 col-md-6 ">
+        <div class="col-lg-3 col-mm-12">
           <div class="card text-dark text-center" style="width: 17rem;">
             <img src="./images/Chef2.jpg" class="card-img-top w-100" style="height: 20rem;" alt="">
             <div class="card-body bg-light">
@@ -234,9 +234,6 @@
           </div>
         </div>
       </div>
-
-
-
     </div>
   </section>
 
@@ -367,12 +364,9 @@
         </div>
 
         <div class="modal-body row" style="text-align: left;">
-          <div class="left-col col col-7">
+          <div class="col-8 left-col ">
             <form class="form1" id="myForm1">
               <div class="size mb-3">
-                <div class="body-title">
-                  <h6 class="fw-bold">Choose Pizza Name: </h6>
-                </div>
                 <div>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pname" id="inlineRadio1" value="Cheese Pizza"
@@ -417,19 +411,18 @@
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="size" id="inlineRadio1" value="500" required>
-                  <label class="form-check-label" for="inlineRadio1">Small</label>
+                  <label class="form-check-label d-flex justify-content-between" for="inlineRadio1">Small <span
+                      class="price">sh.500</span></label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="size" id="inlineRadio2" value="700" required>
-                  <label class="form-check-label" for="inlineRadio2">Medium</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="size" id="inlineRadio3" value="900" required>
-                  <label class="form-check-label" for="inlineRadio3">Large</label>
+                  <input class="form-check-input" type="radio" name="size" id="inlineRadio2" value="800" required>
+                  <label class="form-check-label d-flex justify-content-between" for="inlineRadio2">Medium <span
+                      class="price">sh.800</span></label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="size" id="inlineRadio3" value="1200" required>
-                  <label class="form-check-label" for="inlineRadio3">Extra Large</label>
+                  <label class="form-check-label d-flex justify-content-between" for="inlineRadio3">Large <span
+                      class="price">sh.1200</span></label>
                 </div>
               </div>
 
@@ -439,19 +432,18 @@
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="crust" id="inlineRadio1" value="200" required>
-                  <label class="form-check-label" for="inlineRadio1">Crispy</label>
+                  <label class="form-check-label d-flex justify-content-between" for="inlineRadio1">Crispy <span
+                      class="price">sh.200</span></label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="crust" id="inlineRadio2" value="200" required>
-                  <label class="form-check-label" for="inlineRadio2">Stuffed</label>
+                  <label class="form-check-label d-flex justify-content-between" for="inlineRadio2">Stuffed <span
+                      class="price">sh.200</span></label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="crust" id="inlineRadio3" value="200" required>
-                  <label class="form-check-label" for="inlineRadio3">Gluten-free</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="crust" id="inlineRadio3" value="200" required>
-                  <label class="form-check-label" for="inlineRadio3">Flatbread</label>
+                  <label class="form-check-label d-flex justify-content-between" for="inlineRadio3">Gluten-free <span
+                      class="price">sh.200</span></label>
                 </div>
               </div>
 
@@ -461,27 +453,41 @@
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" name="toppings" type="checkbox" value="120" id="topping1">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Pepperoni
+                  <label class="form-check-label d-flex justify-content-between" for="flexCheckDefault">
+                    Pepperoni <span class="price">sh.120</span>
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" name="toppings" type="checkbox" value="120" id="topping2">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Extra Cheese
+                  <label class="form-check-label d-flex justify-content-between" for="flexCheckChecked">
+                    Extra Cheese <span class="price">sh.120</span>
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" name="toppings" type="checkbox" value="120" id="topping3">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Onions
+                  <label class="form-check-label d-flex justify-content-between" for="flexCheckDefault">
+                    Onions <span class="price">sh.120</span>
                   </label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" name="toppings" type="checkbox" value="120" id="topping4">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Green Peppers
-                  </label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="toppings" type="checkbox" value="120" id="topping4">
+                    <label class="form-check-label d-flex justify-content-between" for="flexCheckChecked">
+                      Green Peppers <span class="price">sh.120</span>
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="toppings" type="checkbox" value="120" id="topping5">
+                    <label class="form-check-label d-flex justify-content-between" for="flexCheckChecked">
+                      Pineapple <span class="price">sh.120</span>
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="toppings" type="checkbox" value="120" id="topping6">
+                    <label class="form-check-label d-flex justify-content-between" for="flexCheckChecked">
+                      Tomatoes <span class="price">sh.120</span>
+                    </label>
+                  </div>
                 </div>
               </div>
 
@@ -496,30 +502,32 @@
                       <div class="option">
                         <div class="form-check form-check-inline">
                           <input class="form-check-input" type="radio" name="delivery" id="inlineRadio3" value="89">
-                          <label class="form-check-label" for="inlineRadio3">Yes</label>
+                          <label class="form-check-label d-flex justify-content-between" for="inlineRadio3">Yes <span
+                              class="price">sh.89</span></label>
                         </div>
                       </div>
                       <div class="option2">
                         <div class="form-check form-check-inline">
                           <input class="form-check-input" type="radio" name="delivery" id="inlineRadio3" value="0">
-                          <label class="form-check-label" for="inlineRadio3">No</label>
+                          <label class="form-check-label d-flex justify-content-between" for="inlineRadio3">No <span
+                              class="price">sh.0</span></label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-auto btnform mt-3">
-                <button type="submit" class="btn btn-sbt mt-2">Add to Cart</button>
+              <div class="col-auto btnform mt-1">
+                <button type="submit" class="btn btn-sbt mt-2" id="showbtns">Add to Cart</button>
               </div>
             </form>
           </div>
 
-          <div class="col col-5 right-col">
+          <div class="col-4 right-col">
             <h6 class="fw-bold text-center">My Cart</h6>
             <div class="col-12">
               <table class="table" id="summary">
-                <thead class="table-light">
+                <thead class="table-dark text-light">
                   <tr>
                     <th scope="col">Items</th>
                     <th scope="col">Price</th>
@@ -531,11 +539,11 @@
               </table>
               <div class="tblBtns d-flex">
                 <div class="col-auto btnform mt-3">
-                  <button type="button" class="btn btn-sbt mt-2 w-75 btn-1" data-bs-dismiss="modal">Order Another
+                  <button type="button" class="btn btn-sbt mt-2 w-75 btn-1 show" data-bs-dismiss="modal">Order Another
                     Pizza</button>
                 </div>
                 <div class="col-auto btnform mt-3">
-                  <button type="button" class="btn btn-sbt mt-2 w-75 btn-1" id="checkout-btn">
+                  <button type="button" class="btn btn-sbt mt-2 w-75 btn-1 show" id="checkout-btn">
                     Proceed to Checkout</a></button>
                 </div>
               </div>

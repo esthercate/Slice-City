@@ -51,7 +51,9 @@ $(document).ready(function () {
     $("#summary tbody").append("<tr>" + "<td> Delivery Location </td>" + "<td>" + location + "</td>" + "</tr>");
   });
 
-
+  $("#showbtns").click(function () {
+    $(".show").show();
+  })
 
 
   //$('#demoo').load('/cart.html', function () {
