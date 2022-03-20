@@ -30,7 +30,6 @@ $(document).ready(function () {
     }, 0);
 
     var deliveryFee = parseInt($("input[name=delivery]:checked").val());
-    var deliveryLocation = $("#deliveryLoc").val();
 
     var total = pizzaSize + pizzaCrust + pizzaToppings + deliveryFee;
     var newPizza = new OrderPizza(pizzaName, pizzaSize, pizzaCrust, pizzaToppings, deliveryFee);
@@ -39,24 +38,26 @@ $(document).ready(function () {
     $("#summary tbody").append("<tr>" + "<td> Crust Price </td>" + "<td>" + pizzaCrust + "</td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td> Toppings Price </td>" + "<td>" + pizzaToppings + "</td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td> Delivery Fee </td>" + "<td>" + deliveryFee + "</td>" + "</tr>");
-    $("#summary tbody").append("<tr>" + "<td> Delivery Location </td>" + "<td>" + deliveryLocation + "</td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td> TOTAL PRICE </td>" + "<td><span class='ttl'>" + "Ksh. " + total + "</span></td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td>  </td>" + "<td>" + " " + "</td>" + "</tr>");
-
-
-    //$("#cart-table tbody").append("<tr>" + "<td>" + pizzaName + "</td>" + "<td>" + deliveryLocation + "</td>" + "<td>" + total + "</td>" + "</tr>");
 
     $("#myForm1").trigger("reset");
   });
 
-  //Show input for delivery location
+  // Prompt user to input delivery location
   $(".option").click(function () {
-    $(".location").show();
+    var location = prompt("Please enter delivery location");
+    alert("Your Pizza will be delivered at " + location + "\nThank you for shopping with us");
+    $("#summary tbody").append("<tr>" + "<td> Delivery Location </td>" + "<td>" + location + "</td>" + "</tr>");
   });
 
-  $(".option2").click(function () {
-    $(".location").hide();
-  });
+
+
+
+  //$('#demoo').load('/cart.html', function () {
+  //  $('#demoo').text('here is my cart');
+  //});
+  //
 
 
 });
