@@ -55,12 +55,4 @@ $(document).ready(function () {
   $("#showbtns").click(function () {
     $(".show").show();
   })
-
-
-  //$('#demoo').load('/cart.html', function () {
-  //  $('#demoo').text('here is my cart');
-  //});
-
-
-
 });
