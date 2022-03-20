@@ -41,7 +41,10 @@ $(document).ready(function () {
     $("#summary tbody").append("<tr>" + "<td> Delivery Fee </td>" + "<td>" + deliveryFee + "</td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td> Delivery Location </td>" + "<td>" + deliveryLocation + "</td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td> TOTAL PRICE </td>" + "<td><span class='ttl'>" + "Ksh. " + total + "</span></td>" + "</tr>");
-    $("#summary tbody").append("<tr>" + "<td> ... </td>" + "<td>" + "..." + "</td>" + "</tr>");
+    $("#summary tbody").append("<tr>" + "<td>  </td>" + "<td>" + " " + "</td>" + "</tr>");
+
+
+    //$("#cart-table tbody").append("<tr>" + "<td>" + pizzaName + "</td>" + "<td>" + deliveryLocation + "</td>" + "<td>" + total + "</td>" + "</tr>");
 
     $("#myForm1").trigger("reset");
   });

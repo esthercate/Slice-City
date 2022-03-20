@@ -51,7 +51,9 @@
           </ul>
           <div class="d-flex text-light">
             <div class="cart">
-              <i class="fa fa-shopping-cart fs-4" aria-hidden="true"></i>
+              <a href="cart.html">
+                <i class="fa fa-shopping-cart fs-4" aria-hidden="true"></i>
+              </a>
             </div>
             <div class="search mx-4">
               <i class="fa fa-search fs-4" aria-hidden="true"></i>
@@ -515,18 +517,18 @@
                 </div>
               </div>
               <div class="col-auto btnform mt-3">
-                <button type="submit" class="btn btn-sbt mt-2">Place Order</button>
+                <button type="submit" class="btn btn-sbt mt-2">Add to Cart</button>
               </div>
             </form>
           </div>
 
           <div class="col col-5 right-col">
-            <h6 class="fw-bold text-center">Your Order Summary</h6>
+            <h6 class="fw-bold text-center">My Cart</h6>
             <div class="col-12">
               <table class="table" id="summary">
                 <thead class="table-light">
                   <tr>
-                    <th scope="col">Pepperoni Pizza</th>
+                    <th scope="col">Items</th>
                     <th scope="col">Price</th>
                   </tr>
                 </thead>
@@ -535,12 +537,14 @@
                 </tbody>
               </table>
               <div class="tblBtns d-flex">
-                <div class="col-auto btnform mt-3 mx-3">
-                  <button type="submit" class="btn btn-sbt mt-2" data-bs-dismiss="modal">Order Another
+                <div class="col-auto btnform mt-3">
+                  <button type="button" class="btn btn-sbt mt-2 w-75 btn-1" data-bs-dismiss="modal">Order Another
                     Pizza</button>
                 </div>
                 <div class="col-auto btnform mt-3">
-                  <button type="submit" class="btn btn-sbt mt-2">Proceed to Checkout</button>
+                  <button type="button" class="btn btn-sbt mt-2 w-75 btn-1" id="checkout-btn"><a href="cart.html"
+                      class="text-light">Proceed to
+                      Checkout</a></button>
                 </div>
               </div>
             </div>
@@ -550,7 +554,6 @@
     </div>
   </div>
   <!-- End Modal-->
-
 </body>
 
 </html>
