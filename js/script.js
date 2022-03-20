@@ -46,20 +46,12 @@ $(document).ready(function () {
 
   // Prompt user to input delivery location
   $(".option").click(function () {
-    var location = prompt("Please enter delivery location");
-    alert("Your Pizza will be delivered at " + location + "\nThank you for shopping with us");
+    var location = prompt("Please Enter Delivery Location");
+    alert("Your pizza will be delivered at " + location);
     $("#summary tbody").append("<tr>" + "<td> Delivery Location </td>" + "<td>" + location + "</td>" + "</tr>");
   });
 
   $("#showbtns").click(function () {
     $(".show").show();
-  })
-
-
-  //$('#demoo').load('/cart.html', function () {
-  //  $('#demoo').text('here is my cart');
-  //});
-  //
-
-
+  });
 });
