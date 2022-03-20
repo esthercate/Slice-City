@@ -132,7 +132,9 @@ a:hover {
   display: none;
 }
 
-
+.ttl {
+  font-weight: bold;
+}
 
 
 /* Our Chefs section*/

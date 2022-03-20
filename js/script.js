@@ -38,7 +38,7 @@ $(document).ready(function () {
     $("#summary tbody").append("<tr>" + "<td> Crust Price </td>" + "<td>" + pizzaCrust + "</td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td> Toppings Price </td>" + "<td>" + pizzaToppings + "</td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td> Delivery Fee </td>" + "<td>" + deliveryFee + "</td>" + "</tr>");
-    $("#summary tbody").append("<tr>" + "<td> TOTAL PRICE </td>" + "<td><span class='ttl'>" + "Ksh. " + total + "</span></td>" + "</tr>");
+    $("#summary tbody").append("<tr>" + "<td class = 'ttl'> TOTAL PRICE </td>" + "<td><span class='ttl'>" + "Ksh. " + total + "</span></td>" + "</tr>");
     $("#summary tbody").append("<tr>" + "<td>  </td>" + "<td>" + " " + "</td>" + "</tr>");
 
     $("#myForm1").trigger("reset");
@@ -55,4 +55,9 @@ $(document).ready(function () {
   $("#showbtns").click(function () {
     $(".show").show();
   })
+
+  $("#checkout-btn").click(function () {
+    alert("Order Placement Successful!")
+  })
+
 });
